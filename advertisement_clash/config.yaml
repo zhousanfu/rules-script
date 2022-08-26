@@ -1,0 +1,337 @@
+###############################################################
+## 配置文件需要放置在 $HOME/.config/clash/*.yaml
+
+## 这份文件是clashX的基础配置文件，请尽量新建配置文件进行修改。
+## ！！！只有这份文件的端口设置会随ClashX启动生效
+
+## 如果您不知道如何操作，请参阅 官方Github文档 https://github.com/Dreamacro/clash/blob/dev/README.md
+## 配置文件说明：https://lancellc.gitbook.io/clash/clash-config-file/an-example-configuration-file
+###############################################################
+
+# >>>>>>>>>>>>>>>>>>>>>> HTTP 代理端口
+port: 7890
+# >>>>>>>>>>>>>>>>>>>>>> SOCKS5 代理端口
+socks-port: 7891
+# >>>>>>>>>>>>>>>>>>>>>> Linux 和 macOS 的 redir 透明代理端口 (重定向 TCP 和 TProxy UDP 流量)
+# redir-port: 7892
+# >>>>>>>>>>>>>>>>>>>>>> Linux 的透明代理端口（适用于 TProxy TCP 和 TProxy UDP 流量)
+# tproxy-port: 7893
+# >>>>>>>>>>>>>>>>>>>>>> HTTP(S) and SOCKS5 共用端口
+# mixed-port: 7890
+# >>>>>>>>>>>>>>>>>>>>>> 本地 SOCKS5/HTTP(S) 服务验证
+authentication:
+  - "admin:adminadmin" # - "user2:pass2"
+
+# >>>>>>>>>>>>>>>>>>>>>> 允许局域网的连接（可用来共享代理）
+allow-lan: true
+bind-address: "*"
+# 此功能仅在 allow-lan 设置为 true 时生效，支持三种参数：
+# "*"                           绑定所有的 IP 地址
+# 192.168.122.11                绑定一个的 IPv4 地址
+# "[aaaa::a8aa:ff:fe09:57d8]"   绑定一个 IPv6 地址
+
+# >>>>>>>>>>>>>>>>>>>>>> Clash 路由工作模式
+# 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）
+mode: rule
+
+# >>>>>>>>>>>>>>>>>>>>>> Clash 默认将日志输出至 STDOUT
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: info
+
+# >>>>>>>>>>>>>>>>>>>>>> clash 的 RESTful API 监听地址
+external-controller: 127.0.0.1:9090
+
+# >>>>>>>>>>>>>>>>>>>>>> 存放配置文件的相对路径，或存放网页静态资源的绝对路径
+# Clash core 将会将其部署在 http://{{external-controller}}/ui
+# external-ui: folder
+
+# >>>>>>>>>>>>>>>>>>>>>> RESTful API 的口令 (可选)
+# 通过 HTTP 头中 Authorization: Bearer ${secret} 参数来验证口令
+# 当 RESTful API 的监听地址为 0.0.0.0 时，请务必设定口令以保证安全
+# secret: ""
+
+# >>>>>>>>>>>>>>>>>>>>>> 出站网卡接口
+# interface-name: en0
+
+# >>>>>>>>>>>>>>>>>>>>>> DNS 服务器和建立连接时的 静态 Hosts, 仅在 dns.enhanced-mode 模式为 redir-host 生效
+# 支持通配符域名 (例如: *.clash.dev, *.foo.*.example.com )
+# 不使用通配符的域名优先级高于使用通配符的域名 (例如: foo.example.com > *.example.com > .example.com )
+# 注意: +.foo.com 的效果等同于 .foo.com 和 foo.com,REJECT
+# hosts:
+# '*.clash.dev': 127.0.0.1
+# '.dev': 127.0.0.1
+# 'alpha.clash.dev': '::1'
+# 'mtalk.google.com': 108.177.125.188
+# 'services.googleapis.cn': 74.125.203.94
+# 'raw.githubusercontent.com': 151.101.76.133
+
+# >>>>>>>>>>>>>>>>>>>>>> DNS 服务器配置(可选；若不配置，程序内置的 DNS 服务会被关闭)
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: true # 当此选项为 false 时, AAAA 请求将返回空
+
+  # 以下填写的 DNS 服务器将会被用来解析 DNS 服务的域名
+  # 仅填写 DNS 服务器的 IP 地址
+  default-nameserver:
+    - 94.140.14.14 # 拦截广告、跟踪和钓鱼
+    - 94.140.14.15 # 默认功能+阻止成人网站+安全搜索
+    - 185.228.168.168 # 阻止访问所有成人、色情和露骨网站，包括代理和 & VPN 域和混合内容站点
+    - 185.228.168.9 # 拦截钓鱼，垃圾邮件和恶意域名
+    - 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+    - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+    - 114.114.114.114 # 114DNS
+    # - 17.50.11.11
+    # - 52.80.66.66
+  enhanced-mode: fake-ip # 或 redir-host
+  fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 (CIDR 形式)
+  # use-hosts: true # 查询 hosts 并返回 IP 记录
+
+  # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
+  # fake-ip-filter:
+  #   # 以下域名列表参考自 vernesong/OpenClash 项目，并由 Hackl0us 整理补充
+  #   # === LAN ===
+  #   - '*.lan'
+  #   # === Linksys Wireless Router ===
+  #   - '*.linksys.com'
+  #   - '*.linksyssmartwifi.com'
+  #   # === Apple Software Update Service ===
+  #   - 'swscan.apple.com'
+  #   - 'mesu.apple.com'
+  #   # === Windows 10 Connnect Detection ===
+  #   - '*.msftconnecttest.com'
+  #   - '*.msftncsi.com'
+  #   # === NTP Service ===
+  #   - 'time.*.com'
+  #   - 'time.*.gov'
+  #   - 'time.*.edu.cn'
+  #   - 'time.*.apple.com'
+
+  #   - 'time1.*.com'
+  #   - 'time2.*.com'
+  #   - 'time3.*.com'
+  #   - 'time4.*.com'
+  #   - 'time5.*.com'
+  #   - 'time6.*.com'
+  #   - 'time7.*.com'
+
+  #   - 'ntp.*.com'
+  #   - 'ntp.*.com'
+  #   - 'ntp1.*.com'
+  #   - 'ntp2.*.com'
+  #   - 'ntp3.*.com'
+  #   - 'ntp4.*.com'
+  #   - 'ntp5.*.com'
+  #   - 'ntp6.*.com'
+  #   - 'ntp7.*.com'
+
+  #   - '*.time.edu.cn'
+  #   - '*.ntp.org.cn'
+  #   - '+.pool.ntp.org'
+
+  #   - 'time1.cloud.tencent.com'
+  #   # === Music Service ===
+  #   ## NetEase
+  #   - '+.music.163.com'
+  #   - '*.126.net'
+  #   ## Baidu
+  #   - 'musicapi.taihe.com'
+  #   - 'music.taihe.com'
+  #   ## Kugou
+  #   - 'songsearch.kugou.com'
+  #   - 'trackercdn.kugou.com'
+  #   ## Kuwo
+  #   - '*.kuwo.cn'
+  #   ## JOOX
+  #   - 'api-jooxtt.sanook.com'
+  #   - 'api.joox.com'
+  #   - 'joox.com'
+  #   ## QQ
+  #   - '+.y.qq.com'
+  #   - '+.music.tc.qq.com'
+  #   - 'aqqmusic.tc.qq.com'
+  #   - '+.stream.qqmusic.qq.com'
+  #   ## Xiami
+  #   - '*.xiami.com'
+  #   ## Migu
+  #   - '+.music.migu.cn'
+  #   # === Game Service ===
+  #   ## Nintendo Switch
+  #   - '+.srv.nintendo.net'
+  #   ## Sony PlayStation
+  #   - '+.stun.playstation.net'
+  #   ## Microsoft Xbox
+  #   - 'xbox.*.microsoft.com'
+  #   - '+.xboxlive.com'
+  #   # === Other ===
+  #   ## QQ Quick Login
+  #   - 'localhost.ptlogin2.qq.com'
+  #   ## Golang
+  #   - 'proxy.golang.org'
+  #   ## STUN Server
+  #   - 'stun.*.*'
+  #   - 'stun.*.*.*'
+  #   - '+.stun.*.*.*.*'
+  #   - 'heartbeat.belkin.com'
+  #   - '*.linksys.com'
+  #   - '*.linksyssmartwifi.com'
+  #   - '*.router.asus.com'
+  #   - 'mesu.apple.com'
+  #   - 'swscan.apple.com'
+  #   - 'swquery.apple.com'
+  #   - 'swdownload.apple.com'
+  #   - 'swcdn.apple.com'
+  #   - 'swdist.apple.com'
+  #   - 'lens.l.google.com'
+  #   - 'stun.l.google.com'
+  #   - '+.nflxvideo.net'
+  #   - '*.square-enix.com'
+  #   - '*.finalfantasyxiv.com'
+  #   - '*.ffxiv.com'
+  #   ## Bilibili CDN
+  #   - '*.mcdn.bilivideo.cn'
+
+  # 支持 UDP / TCP / DoT / DoH 协议的 DNS 服务，可以指明具体的连接端口号。
+  # 所有 DNS 请求将会直接发送到服务器，不经过任何代理。
+  # Clash 会使用最先获得的解析记录回复 DNS 请求
+  nameserver:
+      - 94.140.14.14 # 拦截广告、跟踪和钓鱼
+      - https://dns.adguard-dns.com/dns-query
+      - 94.140.14.15 # 默认功能+阻止成人网站+安全搜索
+      - https://family.adguard-dns.com/dns-query
+      - 185.228.168.168 # 阻止访问所有成人、色情和露骨网站，包括代理和 & VPN 域和混合内容站点
+      - https://doh.cleanbrowsing.org/doh/family-filter
+      - 185.228.168.9 # 拦截钓鱼，垃圾邮件和恶意域名
+      - https://doh.cleanbrowsing.org/doh/security-filter
+    # - https://doh.pub/dns-query
+    # - https://doh.dns.sb/dns-query
+    # - https://dns.adguard.com/dns-query
+    # - https://cdn-doh.ssnm.xyz/dns-query
+    # - 223.5.5.5 # 阿里DNS
+    # - 180.76.76.76 # 百度DNS
+    # - 119.29.29.29 # 腾讯DNS
+      - 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+      - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+      - 114.114.114.114 # 114DNS
+    # - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+    # - https://doh.360.cn/dns-query # 360 DoH DNS
+
+  # 当 fallback 参数被配置时, DNS 请求将同时发送至上方 nameserver 列表和下方 fallback 列表中配置的所有 DNS 服务器.
+  # 当解析得到的 IP 地址的地理位置不是 CN 时，clash 将会选用 fallback 中 DNS 服务器的解析结果。
+  fallback:
+    - https://dns.quad9.net:5053/dns-query
+    - https://dns-unfiltered.adguard.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - https://dns.twnic.tw/dns-query
+    - 8.8.8.8 # 谷歌DNS
+    - 1.1.1.1 # Cloudflare DNS
+    - tls://dns.rubyfish.cn:853
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+    - https://dns.rubyfish.cn/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+
+  # 如果使用 nameserver 列表中的服务器解析的 IP 地址在下方列表中的子网中，则它们被认为是无效的，
+  # Clash 会选用 fallback 列表中配置 DNS 服务器解析得到的结果。
+  #
+  # 当 fallback-filter.geoip 为 true 且 IP 地址的地理位置为 CN 时，
+  # Clash 会选用 nameserver 列表中配置 DNS 服务器解析得到的结果。
+  #
+  # 当 fallback-filter.geoip 为 false, 如果解析结果不在 fallback-filter.ipcidr 范围内，
+  # Clash 总会选用 nameserver 列表中配置 DNS 服务器解析得到的结果。
+  #
+  # 采取以上逻辑进行域名解析是为了对抗 DNS 投毒攻击。
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.88.99.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.githubusercontent.com'
+      - '+.googlevideo.com'
+
+# >>>>>>>>>>>>>>>>>>>>>> 代理节点
+proxies:
+  - {name: local_socks, server: 127.0.0.1, port: 7891, type: socks5, username: admin, password: adminadmin}
+  - {name: local_http, server: 127.0.0.1, port: 7890, type: http, username: admin, password: adminadmin}
+
+# >>>>>>>>>>>>>>>>>>>>>> 代理组策略
+proxy-groups:
+  - {name: "🐟自动", type: "select", proxies: ["local_http", "local_socks", "DIRECT"]}
+  - {name: "🪧拦截", type: "select", proxies: ["REJECT", "DIRECT"]} # proxies : PROXY,DIRECT,REJECT,proxies名称
+
+# >>>>>>>>>>>>>>>>>>>>>> 规则提供商
+rule-providers:
+  AdvertisingLite:
+    type: http
+    behavior: classical
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml
+    path: ./Rules/AdvertisingLite.yaml
+    interval: 86400
+  Advertising_Domain:
+    type: http
+    behavior: domain
+    url: https://gh.oevery.me/https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Advertising/Advertising_Domain.yaml
+    path: ./Rules/Advertising_Domain.yaml
+    interval: 86400
+  ZhihuAds:
+    type: http
+    behavior: classical
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ZhihuAds/ZhihuAds.yaml
+    path: ./Rules/ZhihuAds.yaml
+    interval: 86400
+  Privacy_Classical:
+    type: http
+    behavior: classical
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical.yaml
+    path: ./Rules/Privacy_Classical.yaml
+    interval: 86400
+  AdGuardSDNSFilter_Classical:
+    type: http
+    behavior: classical
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdGuardSDNSFilter/AdGuardSDNSFilter_Classical.yaml
+    path: ./Rules/AdGuardSDNSFilter_Classical.yaml
+    interval: 86400
+  reject:
+    type: http
+    behavior: domain
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
+    path: ./Rules/reject.yaml
+    interval: 86400
+
+# # >>>>>>>>>>>>>>>>>>>>>> 规则,REJECT
+rules:
+  # >>>>>>>>>>> 远程配置 >>>>>>>>>>>,REJECT
+  - RULE-SET,AdvertisingLite,🪧拦截,REJECT # - RULE-SET,AdvertisingTest,PG_AdGuard,REJECT
+  - RULE-SET,Advertising_Domain,🪧拦截,REJECT
+  - RULE-SET,ZhihuAds,🪧拦截,REJECT
+  - RULE-SET,Privacy_Classical,🪧拦截,REJECT
+  - RULE-SET,AdGuardSDNSFilter_Classical,🪧拦截,REJECT
+  - RULE-SET,reject,🪧拦截,REJECT
+
+  # >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>,REJECT
+  - DOMAIN,ad.com,REJECT
+  # >>>>>>>>>>> config.yaml默认 >>>>>>>>>>>
+  - GEOIP,CN,🐟自动
+  - MATCH,🐟自动
