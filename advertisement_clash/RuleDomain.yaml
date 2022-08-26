@@ -3,13 +3,8 @@
 # REPO: https://github.com/zhousanfu/rules_script/tree/master/advertisement_clash
 # >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>,REJECT
 payload:
-  # >>>>>>>>>>>>>>>>>同花顺,REJECT
-  - DOMAIN,adm.10jqka.com.cn,REJECT
-  - DOMAIN,stat.10jqka.com.cn,REJECT
-  
-  
   # >>>>>>>>>>>>>>>>>https://github.com/smxl/500/tree/main/cd
-   - DOMAIN,ad.xiaomi.com,REJECT
+- DOMAIN,ad.xiaomi.com,REJECT
   - DOMAIN,ad1.xiaomi.com,REJECT
   - DOMAIN,ad.mi.com,REJECT
   - DOMAIN,tat.pandora.xiaomi.com,REJECT
@@ -920,7 +915,7 @@ payload:
   - DOMAIN,ads.yahoo.de,REJECT
   # (Z)
   # > Zhihu
-  - USER-AGENT,AVOS*,REJECT
+  # - USER-AGENT,AVOS*,REJECT
   - DOMAIN,appcloud2.in.zhihu.com,REJECT
   - DOMAIN,mqtt.zhihu.com,REJECT
   - DOMAIN,sugar.zhihu.com,REJECT
