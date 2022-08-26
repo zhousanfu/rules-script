@@ -1,6 +1,6 @@
 # NAME: RuleDomain
 # AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
+# REPO: https://github.com/zhousanfu/rules_script/tree/master/advertisement_clash
 # >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>,REJECT
 payload:
   # > 同花顺,REJECT
