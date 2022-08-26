@@ -4,7 +4,7 @@
 # >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>,REJECT
 payload:
   # >>>>>>>>>>>>>>>>>https://github.com/smxl/500/tree/main/cd
-- DOMAIN,ad.xiaomi.com,REJECT
+  - DOMAIN,ad.xiaomi.com,REJECT
   - DOMAIN,ad1.xiaomi.com,REJECT
   - DOMAIN,ad.mi.com,REJECT
   - DOMAIN,tat.pandora.xiaomi.com,REJECT
