@@ -12,6 +12,38 @@ payload:
   # > 手机百度
   - DOMAIN-SUFFIX,boxer.baidu.com
   - DOMAIN-SUFFIX,ug.baidu.com
+  # > 常见广告
+  - DOMAIN,ads.xfyun.cn #讯飞广告
+  - DOMAIN,alog.umeng.com #友盟广告
+  - DOMAIN,bufferfly.mqsng.qq.com #腾讯广告
+  - DOMAIN,cachet.hexin.cn #同花顺广告
+  - DOMAIN,cpro.baidustatic.com #百度广告
+  - DOMAIN,d.url.cn #腾讯广告
+  - DOMAIN,df.tanx.com #淘宝广告
+  - DOMAIN,dup.baidustatic.com #百度广告
+  - DOMAIN,gbres.dfcfw.com #东方财富网广告
+  - DOMAIN,goldsunhq2.guosen.cn #鑫网广告
+  - DOMAIN,group.finance.qq.com #腾讯广告
+  - DOMAIN,ichannel.snssdk.com #享评广告
+  - DOMAIN,isdspeed.qq.com #腾讯广告
+  - DOMAIN,mobads.baidu.com #百度广告
+  - DOMAIN,msg.71.am #爱奇艺广告
+  - DOMAIN,mst3.oo523.com #卓易市场广告
+  - DOMAIN,newstock.finance.qq.com #腾讯广告
+  - DOMAIN,oc.umeng.com #友盟广告
+  - DOMAIN,ope.tanx.com #淘宝广告
+  - DOMAIN,p.tanx.com #淘宝广告
+  - DOMAIN,pnewsapp.tc.qq.com #腾讯广告
+  - DOMAIN,push.gamecenter.vivo.com.cn #vivo广告
+  - DOMAIN,px.3.cn #京东广告
+  - DOMAIN,report.huatuo.qq.com #腾讯广告
+  - DOMAIN,stats.jpush.cn #极光推送广告
+  - DOMAIN,tp.coolmart.net.cn #酷派广告
+  - DOMAIN,upoll.umengcloud.com #友盟广告
+  - DOMAIN,utop.umengcloud.com #友盟广告
+  - DOMAIN,wgo.mmstat.com #淘宝广告
+  - DOMAIN,wspeed.qq.com #腾讯广告
+  - DOMAIN,www.499333.com #香港六合彩广告
   # > Tencent
   # - DOMAIN,mp.weixin.qq.com #微信公众号广告需要脚本
   - DOMAIN,wxsnsdythumb.wxs.qq.com #微信
