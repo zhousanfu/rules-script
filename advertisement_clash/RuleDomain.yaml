@@ -5,7 +5,17 @@
 payload:
   # > 谷歌广告
   - DOMAIN,googleads.g.doubleclick.net
+  # > Block iOS Update
+  - DOMAIN,gdmf.apple.com
+  # > Safari 防跳转
+  # - DOMAIN,app-site-association.cdn-apple.com
+  # > 手机百度
+  - DOMAIN-SUFFIX,boxer.baidu.com
+  - DOMAIN-SUFFIX,ug.baidu.com
   # > Tencent
+  # - DOMAIN,mp.weixin.qq.com #微信公众号广告需要脚本
+  - DOMAIN,wxsnsdythumb.wxs.qq.com #微信
+  - DOMAIN,resstatic.servicewechat.com #微信
   - DOMAIN-SUFFIX,e.qq.com
   - DOMAIN-SUFFIX,l.qq.com
   - DOMAIN,adsmind.apdcdn.tc.qq.com
