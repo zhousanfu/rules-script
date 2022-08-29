@@ -625,7 +625,6 @@ payload:
   - DOMAIN,adm1.autoimg.cn
   - DOMAIN,adm2.autoimg.cn
   - DOMAIN,adm3.autoimg.cn
-
   # (B)
   # --- (Baidu) ---
   - DOMAIN-SUFFIX,duapps.com
@@ -689,6 +688,7 @@ payload:
   - DOMAIN-SUFFIX,googleadsserving.cn
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN-SUFFIX,googletagservices.com
+  - DOMAIN,googleads.g.doubleclick.net
   - DOMAIN,ads.youtube.com
   # (H)
   # > HunanTV
@@ -876,7 +876,6 @@ payload:
   - DOMAIN,ads.viber.com
   - DOMAIN,ads-d.viber.com
   - DOMAIN,ads.aws.viber.com
-
   # (X)
   # > Ximalaya
   - DOMAIN,ad.ximalaya.com
@@ -908,7 +907,7 @@ payload:
   - DOMAIN,mqtt.zhihu.com
   - DOMAIN,sugar.zhihu.com
   - DOMAIN,118.89.204.198
-  - IP-CIDR,118.89.204.198/32
+  # - IP-CIDR,118.89.204.198/32
   # > ZOL
   - DOMAIN,apppv.zol.com.cn
   - DOMAIN,pvnapp.zol.com.cn
