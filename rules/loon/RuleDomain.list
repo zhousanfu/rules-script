@@ -1,0 +1,111 @@
+# >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>
+# > 谷歌广告
+DOMAIN,googleads.g.doubleclick.net
+
+# > Block iOS Update
+DOMAIN,gdmf.apple.com
+
+# > Safari 防跳转
+# DOMAIN,app-site-association.cdn-apple.com
+
+# > 手机百度
+DOMAIN-SUFFIX,boxer.baidu.com
+DOMAIN-SUFFIX,ug.baidu.com
+
+# > 常见广告
+DOMAIN,ads.xfyun.cn #讯飞广告
+DOMAIN,alog.umeng.com #友盟广告
+DOMAIN,bufferfly.mqsng.qq.com #腾讯广告
+DOMAIN,cachet.hexin.cn #同花顺广告
+DOMAIN,cpro.baidustatic.com #百度广告
+DOMAIN,d.url.cn #腾讯广告
+DOMAIN,df.tanx.com #淘宝广告
+DOMAIN,dup.baidustatic.com #百度广告
+DOMAIN,gbres.dfcfw.com #东方财富网广告
+DOMAIN,goldsunhq2.guosen.cn #鑫网广告
+DOMAIN,group.finance.qq.com #腾讯广告
+DOMAIN,ichannel.snssdk.com #享评广告
+DOMAIN,isdspeed.qq.com #腾讯广告
+DOMAIN,mobads.baidu.com #百度广告
+DOMAIN,msg.71.am #爱奇艺广告
+DOMAIN,mst3.oo523.com #卓易市场广告
+DOMAIN,newstock.finance.qq.com #腾讯广告
+DOMAIN,oc.umeng.com #友盟广告
+DOMAIN,ope.tanx.com #淘宝广告
+DOMAIN,p.tanx.com #淘宝广告
+DOMAIN,pnewsapp.tc.qq.com #腾讯广告
+DOMAIN,push.gamecenter.vivo.com.cn #vivo广告
+DOMAIN,px.3.cn #京东广告
+DOMAIN,report.huatuo.qq.com #腾讯广告
+DOMAIN,stats.jpush.cn #极光推送广告
+DOMAIN,tp.coolmart.net.cn #酷派广告
+DOMAIN,upoll.umengcloud.com #友盟广告
+DOMAIN,utop.umengcloud.com #友盟广告
+DOMAIN,wgo.mmstat.com #淘宝广告
+DOMAIN,wspeed.qq.com #腾讯广告
+DOMAIN,www.499333.com #香港六合彩广告
+
+# > Tencent
+# DOMAIN,mp.weixin.qq.com #微信公众号广告需要脚本
+DOMAIN,wxsnsdythumb.wxs.qq.com #微信
+DOMAIN,resstatic.servicewechat.com #微信
+DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,l.qq.com
+DOMAIN,adsmind.apdcdn.tc.qq.com
+DOMAIN,adsmind.gdtimg.com
+DOMAIN,adsmind.tc.qq.com
+DOMAIN,btrace.qq.com
+DOMAIN,c.gdt.qq.com
+DOMAIN,c.gdt.qq.com
+DOMAIN,canvas.gdt.qq.com
+DOMAIN,d.gdt.qq.com
+DOMAIN,i.gdt.qq.com
+DOMAIN,mi.gdt.qq.com
+DOMAIN,pgdt.gtimg.cn
+DOMAIN,pgdt.gtimg.com
+DOMAIN,pgdt.ugdtimg.com
+DOMAIN,q.i.gdt.qq.com
+DOMAIN,rm.gdt.qq.com
+DOMAIN,s.gdt.qq.com
+DOMAIN,splashqqlive.gtimg.com
+DOMAIN,t.gdt.qq.com
+DOMAIN,v.gdt.qq.com
+DOMAIN,v2.gdt.qq.com
+DOMAIN,wa.gtimg.com
+DOMAIN,win.gdt.qq.com
+DOMAIN,wxsnsdy.wxs.qq.com
+DOMAIN,wxsnsdythumb.wxs.qq.com
+DOMAIN,xc.gdt.qq.com
+DOMAIN-SUFFIX,tetrack.qq.com,REJECT
+DOMAIN-SUFFIX,tpns.tencent.com,REJECT
+DOMAIN-SUFFIX,api.poll.video.qq.com,REJECT
+DOMAIN-SUFFIX,static-res.qq.com,REJECT
+DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
+DOMAIN,h.trace.qq.com,REJECT
+DOMAIN,h.trace.qq.com,REJECT
+
+# > 爱奇艺
+DOMAIN,cr-status.iqiyi.com,REJECT
+DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
+DOMAIN,ef-dongfeng.tanx.com,REJECT
+DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
+DOMAIN,t7z.cupid.iqiyi.com,DIRECT
+DOMAIN,paopao-monitor.iqiyi.com,REJECT
+DOMAIN,puma-api.iqiyi.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,upqzfile.com,REJECT
+DOMAIN,mbdlog.iqiyi.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+DOMAIN,myg.qy.net,REJECT
+DOMAIN,www.qchannel01.cn,REJECT
+DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
+DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
+
+# > 高德地图
+DOMAIN,optimus-ads.amap.com,REJECT
+
+
+URL-REGEX,^https:\/\/api\.weibo\.com\/oauth2\/getaid #weibo
+URL-REGEX,^https:\/\/api\.gotokeep\.com\/ads\/v1\/ads\?spotIds #keep
+URL-REGEX,^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement.*$ #工商银行开屏广告
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start #京东开屏广告
