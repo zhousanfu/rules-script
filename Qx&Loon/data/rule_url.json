@@ -1,0 +1,44 @@
+[
+    {
+        "test": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
+    },
+    {
+        "test": "https://gh.oevery.me/https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_domain"
+    },
+    {
+        "test": "https://gh.oevery.me/https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt"
+    },
+    {
+        "test": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
+    },
+    {
+        "test": "https://easylist-downloads.adblockplus.org/easylist.txt"
+    },
+    {
+        "test": "https://gh.oevery.me/https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+    },
+    {
+        "test": "https://gh.oevery.me/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/AdvertisingLite/AdvertisingLite.plugin"
+    },
+    {
+        "test": "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/AdvertisingLite/AdvertisingLite.list"
+    },
+    {
+        "test": "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/AdvertisingLite/AdvertisingLite_Domain.list"
+    },
+    {
+        "test": "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Privacy/Privacy.list"
+    },
+    {
+        "test": "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/EasyPrivacy/EasyPrivacy.list"
+    },
+    {
+        "test": "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/EasyPrivacy/EasyPrivacy_Domain.list"
+    },
+    {
+        "test": "https://gh.oevery.me/https://raw.githubusercontent.com/zhousanfu/rules_script/master/Qx%26Loon/rules/loon/RuleDomain.list"
+    },
+    {
+        "test": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
+    }
+]
