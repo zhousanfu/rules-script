@@ -4,7 +4,7 @@
  Author: Sanfor Chow
  Date: 2022-09-16 15:57:24
  LastEditors: Sanfor Chow
- LastEditTime: 2022-09-28 18:09:20
+ LastEditTime: 2022-09-28 18:18:41
  FilePath: /rules_script/Qx&Loon/test.py
 '''
 import os, re, json, time, requests
@@ -50,7 +50,7 @@ def rule_clean(data):
         # else:
         #     i = re.sub(r"(^[@|]*)", "", i)
         #     i = re.sub("\^", "", i)
-    
+
         if bool(re.search(r'/ad[s]?(/|.)|(/|\.)/ad|(/|.)/ads|^[#\!*]', i)):
             pass
         else:

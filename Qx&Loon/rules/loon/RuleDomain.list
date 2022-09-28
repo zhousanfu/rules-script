@@ -101,21 +101,5 @@ DOMAIN,www.qchannel01.cn,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
 
-
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT #bilibili
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend,REJECT #bilibili
-URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash,REJECT #bilibili
-
-
 # > 高德地图
 DOMAIN,optimus-ads.amap.com,REJECT
-
-
-URL-REGEX,^https:\/\/api\.weibo\.com\/oauth2\/getaid #weibo
-URL-REGEX,^https:\/\/api\.gotokeep\.com\/ads\/v1\/ads\?spotIds #keep
-URL-REGEX,^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement.*$ #工商银行开屏广告
-URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start #京东开屏广告
-
-
-
-DOMAIN-SUFFIX,/ad[s]?(/|\.),REJECT
