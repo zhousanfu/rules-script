@@ -4,7 +4,7 @@
  Author: Sanfor Chow
  Date: 2022-09-16 15:57:24
  LastEditors: Sanfor Chow
- LastEditTime: 2022-09-28 18:18:41
+ LastEditTime: 2022-10-25 17:24:07
  FilePath: /rules_script/Qx&Loon/test.py
 '''
 import os, re, json, time, requests
@@ -127,22 +127,22 @@ def rule_write(domain,ip_cidr,url_regex,domain_suffix,domain_keyword, path_name)
         if bool(re.search(r'^[\-\+]', '.'.join(i))):
             pass
         else:
-            fw.write('DOMAIN,'+ '.'.join(i) +',REJECT'+'\n')
-    fw.write("# ==================== DOMAIN =====================END"+'\n\n')
-    fw.write("# ==================== DOMAIN-KEYWORD =============STA"+'\n')
+            fw.write('  - DOMAIN,'+ '.'.join(i) +',REJECT'+'\n')
+    # w.write("# ==================== DOMAIN =====================END"+'\n\n')
+    # fw.write("# ==================== DOMAIN-KEYWORD =============STA"+'\n')
     for i in domain_keyword:
         if bool(re.search(r'^[\-\+]', '.'.join(i))):
             pass
         else:
-            fw.write('DOMAIN-KEYWORD,'+ '.'.join(i) +',REJECT'+'\n')
-    fw.write("# ==================== DOMAIN-KEYWORD =============END"+'\n\n')
-    fw.write("# ==================== DOMAIN-SUFFIX ==============STA"+'\n')
+            fw.write('  - DOMAIN-KEYWORD,'+ '.'.join(i) +',REJECT'+'\n')
+    # fw.write("# ==================== DOMAIN-KEYWORD =============END"+'\n\n')
+    # fw.write("# ==================== DOMAIN-SUFFIX ==============STA"+'\n')
     for i in domain_suffix:
         if bool(re.search(r'^[\-\+]', '.'.join(i))):
             pass
         else:
-            fw.write('DOMAIN-SUFFIX,'+ '.'.join(i) +',REJECT'+'\n')
-    fw.write("# ==================== DOMAIN-SUFFIX ==============END"+'\n\n')
+            fw.write('  - DOMAIN-SUFFIX,'+ '.'.join(i) +',REJECT'+'\n')
+    # fw.write("# ==================== DOMAIN-SUFFIX ==============END"+'\n\n')
     fw.close()
 
     fw = open(DATA_PATH+'/'+path_name+'class.txt', 'w')
@@ -162,20 +162,20 @@ def rule_write(domain,ip_cidr,url_regex,domain_suffix,domain_keyword, path_name)
         ip_cidr.sort(key=lambda x:x[0])
     except:
         pass
-    fw.write("# ==================== IP-CIDR ====================STA"+'\n')
+    # fw.write("# ==================== IP-CIDR ====================STA"+'\n')
     for i in ip_cidr:
         if bool(re.search(r'^[\-\+]|#', '.'.join(i))):
             pass
         else:
-            fw.write('IP-CIDR,'+ '.'.join(i) +',no-resolve'+'\n')
-    fw.write("# ==================== IP-CIDR  ===================END"+'\n\n')
-    fw.write("# ==================== URL-REGEX ==================STA"+'\n')
+            fw.write('  - IP-CIDR,'+ '.'.join(i) +',no-resolve'+'\n')
+    # fw.write("# ==================== IP-CIDR  ===================END"+'\n\n')
+    # fw.write("# ==================== URL-REGEX ==================STA"+'\n')
     for i in url_regex:
         if bool(re.search(r'^[\-\+]|#', '.'.join(i))):
             pass
         else:
-            fw.write('URL-REGEX,'+ '.'.join(i) +'\n')
-    fw.write("# ==================== URL-REGEX ==================END"+'\n\n')
+            fw.write('  - URL-REGEX,'+ '.'.join(i) +'\n')
+    # fw.write("# ==================== URL-REGEX ==================END"+'\n\n')
 
 
 
