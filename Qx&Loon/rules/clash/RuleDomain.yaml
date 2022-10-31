@@ -3,17 +3,23 @@
 # REPO: https://github.com/zhousanfu/rules_script/tree/master/advertisement_clash
 # >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>
 payload:
-  - DOMAIN-SUFFIX,/ad[s]?(/|\.),REJECT
-  # > 谷歌广告
+  # >>>>>>> 广告域名正则
+  - DOMAIN-SUFFIX,/ad[s]?(/|\.)
+
+  # >>>>>>> 谷歌广告
   - DOMAIN,googleads.g.doubleclick.net
-  # > Block iOS Update
+
+  # >>>>>>> Block iOS Update
   - DOMAIN,gdmf.apple.com
-  # > Safari 防跳转
+
+  # >>>>>>> Safari 防跳转
   # - DOMAIN,app-site-association.cdn-apple.com
-  # > 手机百度
+
+  # >>>>>>> 手机百度
   - DOMAIN-SUFFIX,boxer.baidu.com
   - DOMAIN-SUFFIX,ug.baidu.com
-  # > 常见广告
+
+  # >>>>>>> 常见广告
   - DOMAIN,ads.xfyun.cn #讯飞广告
   - DOMAIN,alog.umeng.com #友盟广告
   - DOMAIN,bufferfly.mqsng.qq.com #腾讯广告
@@ -45,10 +51,11 @@ payload:
   - DOMAIN,wgo.mmstat.com #淘宝广告
   - DOMAIN,wspeed.qq.com #腾讯广告
   - DOMAIN,www.499333.com #香港六合彩广告
-  # > Tencent
+
+  # >>>>>>> Tencent
   # - DOMAIN,mp.weixin.qq.com #微信公众号广告需要脚本
-  - DOMAIN,wxsnsdythumb.wxs.qq.com #微信
-  - DOMAIN,resstatic.servicewechat.com #微信
+  - DOMAIN,wxsnsdythumb.wxs.qq.com
+  - DOMAIN,resstatic.servicewechat.com
   - DOMAIN-SUFFIX,e.qq.com
   - DOMAIN-SUFFIX,l.qq.com
   - DOMAIN,adsmind.apdcdn.tc.qq.com
@@ -76,27 +83,8 @@ payload:
   - DOMAIN,wxsnsdy.wxs.qq.com
   - DOMAIN,wxsnsdythumb.wxs.qq.com
   - DOMAIN,xc.gdt.qq.com
-  # 常见广告域名屏蔽
-  - DOMAIN-KEYWORD,admarvel,REJECT
-  - DOMAIN-KEYWORD,admaster,REJECT
-  - DOMAIN-KEYWORD,adsage,REJECT
-  - DOMAIN-KEYWORD,adsmogo,REJECT
-  - DOMAIN-KEYWORD,adsrvmedia,REJECT
-  - DOMAIN-KEYWORD,adwords,REJECT
-  - DOMAIN-KEYWORD,adservice,REJECT
-  - DOMAIN-KEYWORD,domob,REJECT
-  - DOMAIN-KEYWORD,duomeng,REJECT
-  - DOMAIN-KEYWORD,dwtrack,REJECT
-  - DOMAIN-KEYWORD,guanggao,REJECT
-  - DOMAIN-KEYWORD,lianmeng,REJECT
-  - DOMAIN-SUFFIX,mmstat.com,REJECT
-  - DOMAIN-KEYWORD,omgmta,REJECT
-  - DOMAIN-KEYWORD,openx,REJECT
-  - DOMAIN-KEYWORD,partnerad,REJECT
-  - DOMAIN-KEYWORD,pingfore,REJECT
-  - DOMAIN-KEYWORD,tracking,REJECT
-  - DOMAIN-KEYWORD,uedas,REJECT
-  - DOMAIN-KEYWORD,umeng,REJECT
-  - DOMAIN-KEYWORD,usage,REJECT
-  - DOMAIN-KEYWORD,wlmonitor,REJECT
-  - DOMAIN-KEYWORD,zjtoolbar,REJECT
+
+  # >>>>>>> 同花顺APP
+  - DOMAIN,adm.10jqka.com.cn
+  - DOMAIN,stat.10jqka.com.cn
+  - DOMAIN,vaserviece.10jqka.com.cn
