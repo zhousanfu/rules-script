@@ -4,7 +4,7 @@
  Author: Sanfor Chow
  Date: 2022-09-16 15:57:24
  LastEditors: Sanfor Chow
- LastEditTime: 2022-10-25 17:24:07
+ LastEditTime: 2022-10-31 16:17:58
  FilePath: /rules_script/Qx&Loon/test.py
 '''
 import os, re, json, time, requests
@@ -127,9 +127,11 @@ def rule_write(domain,ip_cidr,url_regex,domain_suffix,domain_keyword, path_name)
         if bool(re.search(r'^[\-\+]', '.'.join(i))):
             pass
         else:
-            fw.write('  - DOMAIN,'+ '.'.join(i) +',REJECT'+'\n')
+            fw.write("  - '"+ '.'.join(i) +"'"+"\n")
     # w.write("# ==================== DOMAIN =====================END"+'\n\n')
     # fw.write("# ==================== DOMAIN-KEYWORD =============STA"+'\n')
+    fw.close()
+    fw = open(DATA_PATH+'/'+path_name+'domain_keyword.txt', 'w')
     for i in domain_keyword:
         if bool(re.search(r'^[\-\+]', '.'.join(i))):
             pass
@@ -137,6 +139,8 @@ def rule_write(domain,ip_cidr,url_regex,domain_suffix,domain_keyword, path_name)
             fw.write('  - DOMAIN-KEYWORD,'+ '.'.join(i) +',REJECT'+'\n')
     # fw.write("# ==================== DOMAIN-KEYWORD =============END"+'\n\n')
     # fw.write("# ==================== DOMAIN-SUFFIX ==============STA"+'\n')
+    fw.close()
+    fw = open(DATA_PATH+'/'+path_name+'domain_suffix.txt', 'w')
     for i in domain_suffix:
         if bool(re.search(r'^[\-\+]', '.'.join(i))):
             pass
@@ -170,11 +174,11 @@ def rule_write(domain,ip_cidr,url_regex,domain_suffix,domain_keyword, path_name)
             fw.write('  - IP-CIDR,'+ '.'.join(i) +',no-resolve'+'\n')
     # fw.write("# ==================== IP-CIDR  ===================END"+'\n\n')
     # fw.write("# ==================== URL-REGEX ==================STA"+'\n')
-    for i in url_regex:
-        if bool(re.search(r'^[\-\+]|#', '.'.join(i))):
-            pass
-        else:
-            fw.write('  - URL-REGEX,'+ '.'.join(i) +'\n')
+    # for i in url_regex:
+    #     if bool(re.search(r'^[\-\+]|#', '.'.join(i))):
+    #         pass
+    #     else:
+    #         fw.write('  - URL-REGEX,'+ '.'.join(i) +'\n')
     # fw.write("# ==================== URL-REGEX ==================END"+'\n\n')
 
 

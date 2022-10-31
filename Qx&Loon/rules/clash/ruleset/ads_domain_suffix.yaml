@@ -1,0 +1,13 @@
+  - DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
+  - DOMAIN-SUFFIX,api.poll.video.qq.com,REJECT
+  - DOMAIN-SUFFIX,boxer.baidu.com,REJECT
+  - DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+  - DOMAIN-SUFFIX,e.qq.com,REJECT
+  - DOMAIN-SUFFIX,gdt.qq.com,REJECT
+  - DOMAIN-SUFFIX,l.qq.com,REJECT
+  - DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
+  - DOMAIN-SUFFIX,static-res.qq.com,REJECT
+  - DOMAIN-SUFFIX,tetrack.qq.com,REJECT
+  - DOMAIN-SUFFIX,tpns.tencent.com,REJECT
+  - DOMAIN-SUFFIX,ug.baidu.com,REJECT
+  - DOMAIN-SUFFIX,upqzfile.com,REJECT

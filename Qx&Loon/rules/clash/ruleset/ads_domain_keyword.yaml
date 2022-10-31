@@ -1,0 +1,3 @@
+  - DOMAIN-KEYWORD,DOMAIN-KEYWORD,REJECT
+  - DOMAIN-KEYWORD,stsdk.vivo.com,REJECT
+  - DOMAIN-KEYWORD,stsdk.vivoglobal.com,REJECT
