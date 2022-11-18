@@ -1,0 +1,183 @@
+payload:
+  - DOMAIN-KEYWORD,admarvel
+  - DOMAIN-KEYWORD,admaster
+  - DOMAIN-KEYWORD,adsage
+  - DOMAIN-KEYWORD,adsensor
+  - DOMAIN-KEYWORD,adservice
+  - DOMAIN-KEYWORD,adsmogo
+  - DOMAIN-KEYWORD,adsrvmedia
+  - DOMAIN-KEYWORD,adsserving
+  - DOMAIN-KEYWORD,adsystem
+  - DOMAIN-KEYWORD,adwords
+  - DOMAIN-KEYWORD,applovin
+  - DOMAIN-KEYWORD,appsflyer
+  - DOMAIN-KEYWORD,domob
+  - DOMAIN-KEYWORD,duomeng
+  - DOMAIN-KEYWORD,dwtrack
+  - DOMAIN-KEYWORD,guanggao
+  - DOMAIN-KEYWORD,omgmta
+  - DOMAIN-KEYWORD,omniture
+  - DOMAIN-KEYWORD,openx
+  - DOMAIN-KEYWORD,partnerad
+  - DOMAIN-KEYWORD,pingfore
+  - DOMAIN-KEYWORD,socdm
+  - DOMAIN-KEYWORD,stsdk.vivo.com
+  - DOMAIN-KEYWORD,stsdk.vivoglobal.com
+  - DOMAIN-KEYWORD,supersonicads
+  - DOMAIN-KEYWORD,wlmonitor
+  - DOMAIN-KEYWORD,zjtoolbar
+  - DOMAIN-SUFFIX,/ad[s]?(/|\.) #广告域名正则
+  - DOMAIN-SUFFIX,ad[s]?(/|\.) #广告域名正则
+  - DOMAIN-SUFFIX,afdback.ppsimg.com
+  - DOMAIN-SUFFIX,api.poll.video.qq.com
+  - DOMAIN-SUFFIX,boxer.baidu.com
+  - DOMAIN-SUFFIX,boxer.baidu.com #手机百度
+  - DOMAIN-SUFFIX,cupid.iqiyi.com
+  - DOMAIN-SUFFIX,e.qq.com
+  - DOMAIN-SUFFIX,e.qq.com #腾讯
+  - DOMAIN-SUFFIX,gdt.qq.com
+  - DOMAIN-SUFFIX,l.qq.com
+  - DOMAIN-SUFFIX,stat.tpns.tencent.com
+  - DOMAIN-SUFFIX,static-res.qq.com
+  - DOMAIN-SUFFIX,tetrack.qq.com
+  - DOMAIN-SUFFIX,tpns.tencent.com
+  - DOMAIN-SUFFIX,ug.baidu.com
+  - DOMAIN-SUFFIX,upqzfile.com
+  - DOMAIN-SUFFIX,ksosoft.com #WPS
+  - DOMAIN-SUFFIX,adgeo.163.com #163 
+  - DOMAIN-SUFFIX,bobo.163.com #163
+  - DOMAIN-SUFFIX,fa.163.com #163
+  - DOMAIN-SUFFIX,g.163.com #163
+  - DOMAIN-SUFFIX,g1.163.com #163
+  - DOMAIN-SUFFIX,gb.corp.163.com #163
+  - DOMAIN-SUFFIX,haitaoad.nosdn.127.net #163
+  - DOMAIN-SUFFIX,img1.126.net #163
+  - DOMAIN-SUFFIX,oadz.com #163
+  - DOMAIN-SUFFIX,oimagea2.ydstatic.com #163
+  - DOMAIN-SUFFIX,pagechoice.net #163
+  - DOMAIN-SUFFIX,prom.gome.com.cn #163
+  - DOMAIN-SUFFIX,rlogs.youdao.com #163
+  - DOMAIN-SUFFIX,static.flv.uuzuonline.com #163
+  - DOMAIN-SUFFIX,wanproxy.127.net #163
+  - DOMAIN-SUFFIX,a.baidu.com  #百度广告
+  - DOMAIN-SUFFIX,adm.baidu.com #百度广告
+  - DOMAIN-SUFFIX,als.baidu.com #百度广告
+  - DOMAIN-SUFFIX,api.youqian.baidu.com #百度广告
+  - DOMAIN-SUFFIX,api.share.baidu.com #百度广告
+  - DOMAIN-SUFFIX,as.baidu.com #百度广告
+  - DOMAIN-SUFFIX,ashifen.com #百度广告
+  - DOMAIN-SUFFIX,baidustatic.com #百度广告
+  - DOMAIN-SUFFIX,baidutv.baidu.com #百度广告
+  - DOMAIN-SUFFIX,baikebcs.bdimg.com #百度广告
+  - DOMAIN-SUFFIX,bar.baidu.com #百度广告
+  - DOMAIN-SUFFIX,bdimg.share.baidu.com #百度广告
+  - DOMAIN-SUFFIX,boscdn.bpc.baidu.com #百度广告
+  - DOMAIN-SUFFIX,c.baidu.com #百度广告
+  - DOMAIN-SUFFIX,cbjs.baidu.com #百度广告
+  - DOMAIN-SUFFIX,cjhq.baidu.com #百度广告
+  - DOMAIN-SUFFIX,cpro.baidu.com #百度广告
+  - DOMAIN-SUFFIX,cpro.tieba.baidu.com #百度广告
+  - DOMAIN-SUFFIX,cpro.zhidao.baidu.com #百度广告
+  - DOMAIN-SUFFIX,dcps.nuomi.com #百度广告
+  - DOMAIN-SUFFIX,drmcmm.baidu.com #百度广告
+  - DOMAIN-SUFFIX,e.baidu.com #百度广告
+  - DOMAIN-SUFFIX,eiv.baidu.com #百度广告
+  - DOMAIN-SUFFIX,feed.baidu.com #百度广告
+  - DOMAIN-SUFFIX,focusbaiduafp.allyes.com #百度广告
+  - DOMAIN-SUFFIX,hc.baidu.com #百度广告
+  - DOMAIN-SUFFIX,hm.baidu.com #百度广告
+  - DOMAIN-SUFFIX,hmma.baidu.com #百度广告
+  - DOMAIN-SUFFIX,hpd.baidu.com #百度广告
+  - DOMAIN-SUFFIX,idm-su.baidu.com #百度广告
+  - DOMAIN-SUFFIX,imageplus.baidu.com #百度广告
+  - DOMAIN-SUFFIX,itsdata.map.baidu.com #百度广告
+  - DOMAIN-SUFFIX,libs.baidu.com #百度广告
+  - DOMAIN-SUFFIX,log.nuomi.com #百度广告
+  - DOMAIN-SUFFIX,log.waimai.baidu.com #百度广告
+  - DOMAIN-SUFFIX,ma.baidu.com #百度广告
+  - DOMAIN-SUFFIX,mobads-logs.baidu.com #百度广告
+  - DOMAIN-SUFFIX,mobads.baidu.com #百度广告
+  - DOMAIN-SUFFIX,msite.baidu.com #百度广告
+  - DOMAIN-SUFFIX,nsclick.baidu.com #百度广告
+  - DOMAIN-SUFFIX,qchannel01.cn #百度广告
+  - DOMAIN-SUFFIX,rj.baidu.com #百度广告
+  - DOMAIN-SUFFIX,shifen.com #百度广告
+  - DOMAIN-SUFFIX,spcode.baidu.com #百度广告
+  - DOMAIN-SUFFIX,static.map.bdimg.com #百度广告
+  - DOMAIN-SUFFIX,static.su.baidu.com #百度广告
+  - DOMAIN-SUFFIX,tk.baidu.com #百度广告
+  - DOMAIN-SUFFIX,tuisong.baidu.com #百度广告
+  - DOMAIN-SUFFIX,ucstat.baidu.com #百度广告
+  - DOMAIN-SUFFIX,ufosdk.baidu.com #百度广告
+  - DOMAIN-SUFFIX,ulog.imap.baidu.com #百度广告
+  - DOMAIN-SUFFIX,union.baidu.com #百度广告
+  - DOMAIN-SUFFIX,utility.baidu.com #百度广告
+  - DOMAIN-SUFFIX,utk.baidu.com #百度广告
+  - DOMAIN-SUFFIX,wangmeng.baidu.com #百度广告
+  - DOMAIN-SUFFIX,wm.baidu.com #百度广告
+  - DOMAIN-SUFFIX,wn.pos.baidu.com #百度广告
+  - DOMAIN-SUFFIX,zhanzhang.baidu.com #百度广告
+  - DOMAIN-SUFFIX,znsv.baidu.com #百度广告
+  - DOMAIN-SUFFIX,zz.bdstatic.com #百度广告
+  - DOMAIN-SUFFIX,acjs.aliyun.com #阿里巴巴
+  - DOMAIN-SUFFIX,adash-c.ut.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,adash.m.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,adashbc.m.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,adashx.m.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,afp.alicdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,alipaylog.com #阿里巴巴
+  - DOMAIN-SUFFIX,amdc.alipay.com #阿里巴巴
+  - DOMAIN-SUFFIX,amdc.m.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,apoll.m.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,appdownload.alicdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,atanx.alicdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,click.aliyun.com #阿里巴巴
+  - DOMAIN-SUFFIX,dorangesource.alicdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,hydra.alibaba.com #阿里巴巴
+  - DOMAIN-SUFFIX,ifs.tanx.com #阿里巴巴
+  - DOMAIN-SUFFIX,m-adash.m.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,m.simaba.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,nbsdk-baichuan.alicdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,nbsdk-baichuan.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,pics.taobaocdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,show.re.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,strip.taobaocdn.com #阿里巴巴
+  - DOMAIN-SUFFIX,tns.simba.taobao.com #阿里巴巴
+  - DOMAIN-SUFFIX,userimg.qunar.com #阿里巴巴
+  - DOMAIN-SUFFIX,yiliao.hupan.com #阿里巴巴
+  - DOMAIN-SUFFIX,act.qq.com #腾讯
+  - DOMAIN-SUFFIX,adsfile.qq.com #腾讯
+  - DOMAIN-SUFFIX,beacon.qq.com #腾讯
+  - DOMAIN-SUFFIX,btrace.qq.com #腾讯
+  - DOMAIN-SUFFIX,bugly.qq.com #腾讯
+  - DOMAIN-SUFFIX,e.qq.com #腾讯
+  - DOMAIN-SUFFIX,gdt.qq.com #腾讯
+  - DOMAIN-SUFFIX,ltsdl.qq.com #腾讯
+  - DOMAIN-SUFFIX,monitor.uu.qq.com #腾讯
+  - DOMAIN-SUFFIX,mtrace.qq.com #腾讯
+  - DOMAIN-SUFFIX,pgdt.gtimg.cn #腾讯
+  - DOMAIN-SUFFIX,pingjs.qq.com #腾讯
+  - DOMAIN-SUFFIX,pingma.qq.com #腾讯
+  - DOMAIN-SUFFIX,pingtcss.qq.com #腾讯
+  - DOMAIN-SUFFIX,report.qq.com #腾讯
+  - DOMAIN-SUFFIX,routertips.video.qq.com #腾讯
+  - DOMAIN-SUFFIX,tajs.qq.com #腾讯
+  - DOMAIN-SUFFIX,tcss.qq.com #腾讯
+  - DOMAIN-SUFFIX,up-hl.3g.qq.com #腾讯
+  - DOMAIN-SUFFIX,fusion.qq.com #腾讯
+  - DOMAIN-SUFFIX,sdkconfig.video.qq.com #腾讯
+  - DOMAIN-SUFFIX,iacc.qq.com #腾讯
+  - DOMAIN-SUFFIX,news.l.qq.com #腾讯
+  - DOMAIN-SUFFIX,yun-hl.3g.qq.com #腾讯
+  - DOMAIN-SUFFIX,3600.com #360
+  - DOMAIN-SUFFIX,adapi.shouji.360.cn #360
+  - DOMAIN-SUFFIX,dev.tg.wan.360.cn #360
+  - DOMAIN-SUFFIX,huodong.ios.shouji.360.cn #360
+  - DOMAIN-SUFFIX,kuaikan.netmon.360safe.com #360
+  - DOMAIN-SUFFIX,leak.360.cn #360
+  - DOMAIN-SUFFIX,openbox.mobilem.360.cn #360
+  - DOMAIN-SUFFIX,pub.se.360.cn #360
+  - DOMAIN-SUFFIX,soft.data.weather.360.cn #360
+  - DOMAIN-SUFFIX,stat.360safe.com #360
+  - DOMAIN-SUFFIX,stat.m.360.cn #360
+  - DOMAIN-SUFFIX,update.360safe.com #360

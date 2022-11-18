@@ -1,38 +1,31 @@
-# NAME: RuleDomain
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/zhousanfu/rules_script/tree/master/advertisement_clash
-# >>>>>>>>>>> 自己写的规则 >>>>>>>>>>>
 payload:
-  # >>>>>>> 广告域名正则
-  - DOMAIN-SUFFIX,/ad[s]?(/|\.)
-
-  # >>>>>>> 谷歌广告
-  - DOMAIN,googleads.g.doubleclick.net
-
-  # >>>>>>> Block iOS Update
-  - DOMAIN,gdmf.apple.com
-
-  # >>>>>>> Safari 防跳转
-  # - DOMAIN,app-site-association.cdn-apple.com
-
-  # >>>>>>> 手机百度
-  - DOMAIN-SUFFIX,boxer.baidu.com
-  - DOMAIN-SUFFIX,ug.baidu.com
-
-  # >>>>>>> 常见广告
+  - DOMAIN,adm.10jqka.com.cn #同花顺APP
   - DOMAIN,ads.xfyun.cn #讯飞广告
+  - DOMAIN,adsmind.apdcdn.tc.qq.com
+  - DOMAIN,adsmind.gdtimg.com
+  - DOMAIN,adsmind.tc.qq.com
   - DOMAIN,alog.umeng.com #友盟广告
+  - DOMAIN,app-site-association.cdn-apple.com #Safari防跳转
+  - DOMAIN,btrace.qq.com
   - DOMAIN,bufferfly.mqsng.qq.com #腾讯广告
+  - DOMAIN,c.gdt.qq.com
   - DOMAIN,cachet.hexin.cn #同花顺广告
+  - DOMAIN,canvas.gdt.qq.com
   - DOMAIN,cpro.baidustatic.com #百度广告
+  - DOMAIN,d.gdt.qq.com
   - DOMAIN,d.url.cn #腾讯广告
   - DOMAIN,df.tanx.com #淘宝广告
   - DOMAIN,dup.baidustatic.com #百度广告
   - DOMAIN,gbres.dfcfw.com #东方财富网广告
+  - DOMAIN,gdmf.apple.com #Block iOS Update
   - DOMAIN,goldsunhq2.guosen.cn #鑫网广告
+  - DOMAIN,googleads.g.doubleclick.net #谷歌广告
   - DOMAIN,group.finance.qq.com #腾讯广告
+  - DOMAIN,i.gdt.qq.com
   - DOMAIN,ichannel.snssdk.com #享评广告
   - DOMAIN,isdspeed.qq.com #腾讯广告
+  - DOMAIN,m3.1317w.com #视频网站广告
+  - DOMAIN,mi.gdt.qq.com
   - DOMAIN,mobads.baidu.com #百度广告
   - DOMAIN,msg.71.am #爱奇艺广告
   - DOMAIN,mst3.oo523.com #卓易市场广告
@@ -40,51 +33,32 @@ payload:
   - DOMAIN,oc.umeng.com #友盟广告
   - DOMAIN,ope.tanx.com #淘宝广告
   - DOMAIN,p.tanx.com #淘宝广告
-  - DOMAIN,pnewsapp.tc.qq.com #腾讯广告
-  - DOMAIN,push.gamecenter.vivo.com.cn #vivo广告
-  - DOMAIN,px.3.cn #京东广告
-  - DOMAIN,report.huatuo.qq.com #腾讯广告
-  - DOMAIN,stats.jpush.cn #极光推送广告
-  - DOMAIN,tp.coolmart.net.cn #酷派广告
-  - DOMAIN,upoll.umengcloud.com #友盟广告
-  - DOMAIN,utop.umengcloud.com #友盟广告
-  - DOMAIN,wgo.mmstat.com #淘宝广告
-  - DOMAIN,wspeed.qq.com #腾讯广告
-  - DOMAIN,www.499333.com #香港六合彩广告
-
-  # >>>>>>> Tencent
-  # - DOMAIN,mp.weixin.qq.com #微信公众号广告需要脚本
-  - DOMAIN,wxsnsdythumb.wxs.qq.com
-  - DOMAIN,resstatic.servicewechat.com
-  - DOMAIN-SUFFIX,e.qq.com
-  - DOMAIN-SUFFIX,l.qq.com
-  - DOMAIN,adsmind.apdcdn.tc.qq.com
-  - DOMAIN,adsmind.gdtimg.com
-  - DOMAIN,adsmind.tc.qq.com
-  - DOMAIN,btrace.qq.com
-  - DOMAIN,c.gdt.qq.com
-  - DOMAIN,c.gdt.qq.com
-  - DOMAIN,canvas.gdt.qq.com
-  - DOMAIN,d.gdt.qq.com
-  - DOMAIN,i.gdt.qq.com
-  - DOMAIN,mi.gdt.qq.com
   - DOMAIN,pgdt.gtimg.cn
   - DOMAIN,pgdt.gtimg.com
   - DOMAIN,pgdt.ugdtimg.com
+  - DOMAIN,pnewsapp.tc.qq.com #腾讯广告
+  - DOMAIN,push.gamecenter.vivo.com.cn #vivo广告
+  - DOMAIN,px.3.cn #京东广告
   - DOMAIN,q.i.gdt.qq.com
+  - DOMAIN,report.huatuo.qq.com #腾讯广告
+  - DOMAIN,resstatic.servicewechat.com
   - DOMAIN,rm.gdt.qq.com
   - DOMAIN,s.gdt.qq.com
   - DOMAIN,splashqqlive.gtimg.com
+  - DOMAIN,stat.10jqka.com.cn
+  - DOMAIN,stats.jpush.cn #极光推送广告
   - DOMAIN,t.gdt.qq.com
-  - DOMAIN,v.gdt.qq.com
+  - DOMAIN,tp.coolmart.net.cn #酷派广告
+  - DOMAIN,upoll.umengcloud.com #友盟广告
+  - DOMAIN,utop.umengcloud.com #友盟广告
   - DOMAIN,v2.gdt.qq.com
+  - DOMAIN,v.gdt.qq.com
+  - DOMAIN,vaserviece.10jqka.com.cn
   - DOMAIN,wa.gtimg.com
+  - DOMAIN,wgo.mmstat.com #淘宝广告
   - DOMAIN,win.gdt.qq.com
+  - DOMAIN,wspeed.qq.com #腾讯广告
+  - DOMAIN,www.499333.com #香港六合彩广告
   - DOMAIN,wxsnsdy.wxs.qq.com
   - DOMAIN,wxsnsdythumb.wxs.qq.com
   - DOMAIN,xc.gdt.qq.com
-
-  # >>>>>>> 同花顺APP
-  - DOMAIN,adm.10jqka.com.cn
-  - DOMAIN,stat.10jqka.com.cn
-  - DOMAIN,vaserviece.10jqka.com.cn

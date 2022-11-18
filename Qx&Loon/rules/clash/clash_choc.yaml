@@ -57,115 +57,21 @@ proxy-groups:
 
 # >>>>>>>>>>>>>>>>>>>>>> 规则提供商
 rule-providers:
+  RuleDomain:
+    type: http
+    behavior: classical
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/zhousanfu/rules_script/master/Qx%26Loon/rules/clash/RuleDomain.yaml
+    path: ./ruleset/RuleDomain.yaml
+    interval: 86400
+  RuleClass:
+    type: http
+    behavior: classical
+    url: https://gh.oevery.me/https://raw.githubusercontent.com/zhousanfu/rules_script/master/Qx%26Loon/rules/clash/RuleClass.yaml
+    path: ./ruleset/RuleClass.yaml
+    interval: 86400
 
 # >>>>>>>>>>>>>>>>>>>>>> 规则
 rules:
-  - DOMAIN,googleads.g.doubleclick.net,🪧AdBlock # 谷歌广告
-  # - DOMAIN,gdmf.apple.com,🪧AdBlock #Block iOS Update
-  # - DOMAIN,app-site-association.cdn-apple.com,🪧AdBlock # Safari 防跳转
-  - DOMAIN,ads.xfyun.cn,🪧AdBlock #讯飞广告
-  - DOMAIN,alog.umeng.com,🪧AdBlock #友盟广告
-  - DOMAIN,bufferfly.mqsng.qq.com,🪧AdBlock #腾讯广告
-  - DOMAIN,cachet.hexin.cn,🪧AdBlock #同花顺广告
-  - DOMAIN,cpro.baidustatic.com,🪧AdBlock #百度广告
-  - DOMAIN,d.url.cn,🪧AdBlock #腾讯广告
-  - DOMAIN,df.tanx.com,🪧AdBlock #淘宝广告
-  - DOMAIN,dup.baidustatic.com,🪧AdBlock #百度广告
-  - DOMAIN,gbres.dfcfw.com,🪧AdBlock #东方财富网广告
-  - DOMAIN,group.finance.qq.com,🪧AdBlock #腾讯广告
-  - DOMAIN,isdspeed.qq.com,🪧AdBlock #腾讯广告
-  - DOMAIN,mobads.baidu.com,🪧AdBlock #百度广告
-  - DOMAIN,msg.71.am,🪧AdBlock #爱奇艺广告
-  - DOMAIN,newstock.finance.qq.com,🪧AdBlock #腾讯广告
-  - DOMAIN,oc.umeng.com,🪧AdBlock #友盟广告
-  - DOMAIN,ope.tanx.com,🪧AdBlock #淘宝广告
-  - DOMAIN,p.tanx.com,🪧AdBlock #淘宝广告
-  - DOMAIN,pnewsapp.tc.qq.com,🪧AdBlock #腾讯广告
-  - DOMAIN,push.gamecenter.vivo.com.cn,🪧AdBlock #vivo广告
-  - DOMAIN,px.3.cn,🪧AdBlock #京东广告
-  - DOMAIN,report.huatuo.qq.com,🪧AdBlock #腾讯广告
-  - DOMAIN,stats.jpush.cn,🪧AdBlock #极光推送广告
-  - DOMAIN,tp.coolmart.net.cn,🪧AdBlock #酷派广告
-  - DOMAIN,upoll.umengcloud.com,🪧AdBlock #友盟广告
-  - DOMAIN,utop.umengcloud.com,🪧AdBlock # 友盟广告
-  - DOMAIN,wgo.mmstat.com,🪧AdBlock # 淘宝广告
-  - DOMAIN,wspeed.qq.com,🪧AdBlock # 腾讯广告
-  - DOMAIN,www.499333.com,🪧AdBlock # 香港六合彩广告
-  - DOMAIN,wxsnsdythumb.wxs.qq.com,🪧AdBlock
-  - DOMAIN,resstatic.servicewechat.com,🪧AdBlock
-  - DOMAIN,adsmind.apdcdn.tc.qq.com,🪧AdBlock
-  - DOMAIN,adsmind.gdtimg.com,🪧AdBlock
-  - DOMAIN,adsmind.tc.qq.com,🪧AdBlock
-  - DOMAIN,btrace.qq.com,🪧AdBlock
-  - DOMAIN,c.gdt.qq.com,🪧AdBlock
-  - DOMAIN,c.gdt.qq.com,🪧AdBlock
-  - DOMAIN,canvas.gdt.qq.com,🪧AdBlock
-  - DOMAIN,d.gdt.qq.com,🪧AdBlock
-  - DOMAIN,i.gdt.qq.com,🪧AdBlock
-  - DOMAIN,mi.gdt.qq.com,🪧AdBlock
-  - DOMAIN,pgdt.gtimg.cn,🪧AdBlock
-  - DOMAIN,pgdt.gtimg.com,🪧AdBlock
-  - DOMAIN,pgdt.ugdtimg.com,🪧AdBlock
-  - DOMAIN,q.i.gdt.qq.com,🪧AdBlock
-  - DOMAIN,rm.gdt.qq.com,🪧AdBlock
-  - DOMAIN,s.gdt.qq.com,🪧AdBlock
-  - DOMAIN,splashqqlive.gtimg.com,🪧AdBlock
-  - DOMAIN,t.gdt.qq.com,🪧AdBlock
-  - DOMAIN,v.gdt.qq.com,🪧AdBlock
-  - DOMAIN,v2.gdt.qq.com,🪧AdBlock
-  - DOMAIN,wa.gtimg.com,🪧AdBlock
-  - DOMAIN,win.gdt.qq.com,🪧AdBlock
-  - DOMAIN,wxsnsdy.wxs.qq.com,🪧AdBlock
-  - DOMAIN,wxsnsdythumb.wxs.qq.com,🪧AdBlock
-  - DOMAIN,xc.gdt.qq.com,🪧AdBlock
-  - DOMAIN,adm.10jqka.com.cn,🪧AdBlock # 同花顺APP
-  - DOMAIN,stat.10jqka.com.cn,🪧AdBlock
-  - DOMAIN,vaserviece.10jqka.com.cn,🪧AdBlock
-  - DOMAIN,m3.1317w.com,🪧AdBlock # 视频网站广告
-
-  - DOMAIN-SUFFIX,ad[s]?(/|\.),🪧AdBlock # 广告域名正则
-  - DOMAIN-SUFFIX,boxer.baidu.com,🪧AdBlock # 手机百度
-  - DOMAIN-SUFFIX,ug.baidu.com,🪧AdBlock
-  - DOMAIN-SUFFIX,e.qq.com,🪧AdBlock # 腾讯
-  - DOMAIN-SUFFIX,l.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,l.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,e.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,gdt.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,api.poll.video.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,stat.tpns.tencent.com,🪧AdBlock
-  - DOMAIN-SUFFIX,static-res.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,tetrack.qq.com,🪧AdBlock
-  - DOMAIN-SUFFIX,tpns.tencent.com,🪧AdBlock
-  - DOMAIN-SUFFIX,upqzfile.com,🪧AdBlock
-  - DOMAIN-SUFFIX,cupid.iqiyi.com,🪧AdBlock
-  - DOMAIN-SUFFIX,afdback.ppsimg.com,🪧AdBlock
-
-  - DOMAIN-KEYWORD,admarvel,🪧AdBlock
-  - DOMAIN-KEYWORD,admaster,🪧AdBlock
-  - DOMAIN-KEYWORD,adsage,🪧AdBlock
-  - DOMAIN-KEYWORD,adsensor,🪧AdBlock
-  - DOMAIN-KEYWORD,adservice,🪧AdBlock
-  - DOMAIN-KEYWORD,adsmogo,🪧AdBlock
-  - DOMAIN-KEYWORD,adsrvmedia,🪧AdBlock
-  - DOMAIN-KEYWORD,adsserving,🪧AdBlock
-  - DOMAIN-KEYWORD,adsystem,🪧AdBlock
-  - DOMAIN-KEYWORD,adwords,🪧AdBlock
-  - DOMAIN-KEYWORD,applovin,🪧AdBlock
-  - DOMAIN-KEYWORD,appsflyer,🪧AdBlock
-  - DOMAIN-KEYWORD,domob,🪧AdBlock
-  - DOMAIN-KEYWORD,duomeng,🪧AdBlock
-  - DOMAIN-KEYWORD,dwtrack,🪧AdBlock
-  - DOMAIN-KEYWORD,guanggao,🪧AdBlock
-  - DOMAIN-KEYWORD,omgmta,🪧AdBlock
-  - DOMAIN-KEYWORD,omniture,🪧AdBlock
-  - DOMAIN-KEYWORD,openx,🪧AdBlock
-  - DOMAIN-KEYWORD,partnerad,🪧AdBlock
-  - DOMAIN-KEYWORD,pingfore,🪧AdBlock
-  - DOMAIN-KEYWORD,socdm,🪧AdBlock
-  - DOMAIN-KEYWORD,stsdk.vivo.com,🪧AdBlock
-  - DOMAIN-KEYWORD,stsdk.vivoglobal.com,🪧AdBlock
-  - DOMAIN-KEYWORD,supersonicads,🪧AdBlock
-  - DOMAIN-KEYWORD,wlmonitor,🪧AdBlock
-  - DOMAIN-KEYWORD,zjtoolbar,🪧AdBlock
-  
+  - RULE-SET,RuleDomain,🪧AdBlock
+  - RULE-SET,RuleClass,🪧AdBlock
   - MATCH,🐟漏网之鱼
