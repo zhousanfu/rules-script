@@ -26,8 +26,6 @@ payload:
   - DOMAIN-KEYWORD,supersonicads
   - DOMAIN-KEYWORD,wlmonitor
   - DOMAIN-KEYWORD,zjtoolbar
-  - DOMAIN-SUFFIX,/ad[s]?(/|\.) #广告域名正则
-  - DOMAIN-SUFFIX,ad[s]?(/|\.) #广告域名正则
   - DOMAIN-SUFFIX,afdback.ppsimg.com
   - DOMAIN-SUFFIX,api.poll.video.qq.com
   - DOMAIN-SUFFIX,boxer.baidu.com
@@ -150,7 +148,6 @@ payload:
   - DOMAIN-SUFFIX,beacon.qq.com #腾讯
   - DOMAIN-SUFFIX,btrace.qq.com #腾讯
   - DOMAIN-SUFFIX,bugly.qq.com #腾讯
-  - DOMAIN-SUFFIX,e.qq.com #腾讯
   - DOMAIN-SUFFIX,gdt.qq.com #腾讯
   - DOMAIN-SUFFIX,ltsdl.qq.com #腾讯
   - DOMAIN-SUFFIX,monitor.uu.qq.com #腾讯
@@ -181,3 +178,89 @@ payload:
   - DOMAIN-SUFFIX,stat.360safe.com #360
   - DOMAIN-SUFFIX,stat.m.360.cn #360
   - DOMAIN-SUFFIX,update.360safe.com #360
+  - DOMAIN-SUFFIX,azabu-u.ac.jp
+  - DOMAIN-SUFFIX,couchcoaster.jp
+  - DOMAIN-SUFFIX,delivery.dmkt-sp.jp
+  - DOMAIN-SUFFIX,ehg-youtube.hitbox.com
+  - DOMAIN-SUFFIX,nichibenren.or.jp
+  - DOMAIN-SUFFIX,nicorette.co.kr
+  - DOMAIN-SUFFIX,ssl-youtube.2cnt.net
+  - DOMAIN-SUFFIX,youtube.112.2o7.net
+  - DOMAIN-SUFFIX,youtube.2cnt.net
+  - DOMAIN-SUFFIX,ad.docer.wps.cn
+  - DOMAIN-SUFFIX,adm.zookingsoft.com
+  - DOMAIN-SUFFIX,bannera.kingsoft-office-service.com
+  - DOMAIN-SUFFIX,bole.shangshufang.ksosoft.com
+  - DOMAIN-SUFFIX,counter.kingsoft.com
+  - DOMAIN-SUFFIX,docerad.wps.cn
+  - DOMAIN-SUFFIX,gou.wps.cn
+  - DOMAIN-SUFFIX,hoplink.ksosoft.com
+  - DOMAIN-SUFFIX,ic.ksosoft.com
+  - DOMAIN-SUFFIX,img.gou.wpscdn.cn
+  - DOMAIN-SUFFIX,info.wps.cn
+  - DOMAIN-SUFFIX,ios-informationplatform.wps.cn
+  - DOMAIN-SUFFIX,minfo.wps.cn
+  - DOMAIN-SUFFIX,mo.res.wpscdn.cn
+  - DOMAIN-SUFFIX,news.docer.com
+  - DOMAIN-SUFFIX,notify.wps.cn
+  - DOMAIN-SUFFIX,pc.uf.ksosoft.com
+  - DOMAIN-SUFFIX,pcfg.wps.cn
+  - DOMAIN-SUFFIX,pixiu.shangshufang.ksosoft.com
+  - DOMAIN-SUFFIX,push.wps.cn
+  - DOMAIN-SUFFIX,rating6.kingsoft-office-service.com
+  - DOMAIN-SUFFIX,up.wps.kingsoft.com
+  - DOMAIN-SUFFIX,wpsweb-dc.wps.cn
+  - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN-SUFFIX,ads.twitter.com
+  - DOMAIN-SUFFIX,analytics.twitter.com
+  - DOMAIN-SUFFIX,p.twitter.com
+  - DOMAIN-SUFFIX,scribe.twitter.com
+  - DOMAIN-SUFFIX,syndication-o.twitter.com
+  - DOMAIN-SUFFIX,syndication.twitter.com
+  - DOMAIN-SUFFIX,tellapart.com
+  - DOMAIN-SUFFIX,urls.api.twitter.com
+  - DOMAIN-KEYWORD,omgmtaw
+  - DOMAIN-SUFFIX,act.qq.com
+  - DOMAIN-SUFFIX,ad.qun.qq.com
+  - DOMAIN-SUFFIX,adsfile.qq.com
+  - DOMAIN-SUFFIX,bugly.qq.com
+  - DOMAIN-SUFFIX,buluo.qq.com
+  - DOMAIN-SUFFIX,monitor.qq.com
+  - DOMAIN-SUFFIX,pingma.qq.com
+  - DOMAIN-SUFFIX,pingtcss.qq.com
+  - DOMAIN-SUFFIX,report.qq.com
+  - DOMAIN-SUFFIX,tajs.qq.com
+  - DOMAIN-SUFFIX,tcss.qq.com
+  - DOMAIN-SUFFIX,uu.qq.com
+  - DOMAIN-SUFFIX,adserver.unityads.unity3d.com # Apple
+  - DOMAIN-SUFFIX,acjs.aliyun.com
+  - DOMAIN-SUFFIX,adash-c.m.taobao.com
+  - DOMAIN-SUFFIX,adash-c.ut.taobao.com
+  - DOMAIN-SUFFIX,adashx4yt.m.taobao.com
+  - DOMAIN-SUFFIX,adashxgc.ut.taobao.com
+  - DOMAIN-SUFFIX,afp.alicdn.com
+  - DOMAIN-SUFFIX,ai.m.taobao.com
+  - DOMAIN-SUFFIX,alipaylog.com
+  - DOMAIN-SUFFIX,atanx.alicdn.com
+  - DOMAIN-SUFFIX,atanx2.alicdn.com
+  - DOMAIN-SUFFIX,fav.simba.taobao.com
+  - DOMAIN-SUFFIX,g.click.taobao.com
+  - DOMAIN-SUFFIX,g.tbcdn.cn
+  - DOMAIN-SUFFIX,gma.alicdn.com
+  - DOMAIN-SUFFIX,gtmsdd.alicdn.com
+  - DOMAIN-SUFFIX,hydra.alibaba.com
+  - DOMAIN-SUFFIX,m.simba.taobao.com
+  - DOMAIN-SUFFIX,pindao.huoban.taobao.com
+  - DOMAIN-SUFFIX,re.m.taobao.com
+  - DOMAIN-SUFFIX,redirect.simba.taobao.com
+  - DOMAIN-SUFFIX,rj.m.taobao.com
+  - DOMAIN-SUFFIX,sdkinit.taobao.com
+  - DOMAIN-SUFFIX,show.re.taobao.com
+  - DOMAIN-SUFFIX,simaba.m.taobao.com
+  - DOMAIN-SUFFIX,simaba.taobao.com
+  - DOMAIN-SUFFIX,srd.simba.taobao.com
+  - DOMAIN-SUFFIX,strip.taobaocdn.com
+  - DOMAIN-SUFFIX,tns.simba.taobao.com
+  - DOMAIN-SUFFIX,tyh.taobao.com
+  - DOMAIN-SUFFIX,userimg.qunar.com
+  - DOMAIN-SUFFIX,yiliao.hupan.com
